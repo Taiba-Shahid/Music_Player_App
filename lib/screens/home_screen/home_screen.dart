@@ -128,7 +128,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         style: TextStyle(fontSize: 18, color: Colors.black),
                       ),
                     ),
-                    const AlbumView(),
+                     AlbumView(),
                     const Center(
                       child: Text(
                         "Favourite Tab",

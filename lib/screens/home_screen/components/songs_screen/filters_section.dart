@@ -1,5 +1,4 @@
 import 'dart:developer';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_remix/flutter_remix.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -7,7 +6,6 @@ import 'package:get/get.dart';
 import 'package:music_app/controllers/songs_controller.dart';
 import 'package:music_app/helpers/capitalize_first.dart';
 import 'package:on_audio_query/on_audio_query.dart';
-
 import '../../../../utils/colors.dart';
 
 class FilterSection extends StatelessWidget {
