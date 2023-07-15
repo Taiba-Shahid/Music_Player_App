@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_remix/flutter_remix.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:music_app/screens/home_screen/components/Album_screen/album_view.dart';
+import 'package:music_app/screens/home_screen/components/album_screen/album_view.dart';
+import 'package:music_app/screens/home_screen/components/artist_screen/artist_view.dart';
 import 'package:music_app/screens/home_screen/components/songs_screen/songs_view.dart';
 import 'package:music_app/screens/home_screen/components/suggested_view.dart';
 import 'package:music_app/utils/colors.dart';
@@ -122,13 +123,8 @@ class _HomeScreenState extends State<HomeScreen> {
                   child: TabBarView(children: [
                     const SuggestedView(),
                     SongsView(),
-                    const Center(
-                      child: Text(
-                        "Artist Tab",
-                        style: TextStyle(fontSize: 18, color: Colors.black),
-                      ),
-                    ),
-                     AlbumView(),
+                    ArtistView(),
+                    AlbumView(),
                     const Center(
                       child: Text(
                         "Favourite Tab",

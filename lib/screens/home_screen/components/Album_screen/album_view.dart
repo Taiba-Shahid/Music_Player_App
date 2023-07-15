@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:music_app/controllers/albums_controller.dart';
-import 'package:music_app/screens/home_screen/components/Album_screen/filters_section.dart';
+import 'package:music_app/screens/home_screen/components/album_screen/filters_section.dart';
 import 'package:on_audio_query/on_audio_query.dart';
 
 import '../../../../utils/text.dart';
