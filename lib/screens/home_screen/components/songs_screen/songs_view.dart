@@ -4,6 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:music_app/controllers/songs_controller.dart';
 import 'package:music_app/helpers/format_time.dart';
+import 'package:music_app/screens/home_screen/components/songs_screen/components/songs_options.dart';
 import 'package:music_app/screens/home_screen/components/songs_screen/filters_section.dart';
 import 'package:music_app/utils/colors.dart';
 import 'package:music_app/utils/text.dart';
@@ -67,13 +68,28 @@ class SongsView extends StatelessWidget {
                               color: Colors.black,
                               fontWeight: FontWeight.w500),
                         ),
-                        trailing: CircleAvatar(
-                          radius: 14,
-                          foregroundColor: Appcolors.backgroundColor,
-                          backgroundColor: Appcolors.orangeColor,
-                          child: const Icon(
-                            FlutterRemix.play_fill,
-                            size: 20,
+                        trailing: SizedBox(
+                          width: 55.w,
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              CircleAvatar(
+                                radius: 14,
+                                foregroundColor: Appcolors.backgroundColor,
+                                backgroundColor: Appcolors.orangeColor,
+                                child: const Icon(
+                                  FlutterRemix.play_fill,
+                                  size: 20,
+                                ),
+                              ),
+                              GestureDetector(
+                                  onTap: () {
+                                    Get.bottomSheet(SongsOptions(song: filteredsongs[index],));
+                                  },
+                                  child: const Icon(
+                                    FlutterRemix.more_2_fill,
+                                  ))
+                            ],
                           ),
                         ),
                         subtitle: IntrinsicHeight(
